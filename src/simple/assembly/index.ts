@@ -24,3 +24,7 @@ export function write(key: string, value: string): string {
 function storageReport(): string {
   return `storage [ ${Context.storageUsage} bytes ]`
 }
+
+export function get_balance(): u128 {
+  return Context.accountBalance
+}
